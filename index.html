@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Teng Xiao</title>
+    <meta name="author" content="Teng Xiao">
+<meta name="description" content="Teng Xiao is a researcher at the Allen Institute for AI (AI2) and the University of Washington, working on alignment and reasoning for LLMs and long-horizon LLM agents.">
+
+<link rel="icon" href="images/favicon/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+<link rel="apple-touch-icon" href="images/favicon/apple-touch-icon.png">
+
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://tengxiao1.github.io/">
+<meta property="og:title" content="Teng Xiao">
+<meta property="og:description" content="Researcher at AI2 and the University of Washington, working on alignment and reasoning for LLMs and long-horizon LLM agents.">
+<meta name="twitter:card" content="summary">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400..700;1,8..60,400..600&family=JetBrains+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="stylesheet.css">
+
+<script>
+  // Applied before first paint so the page never flashes the wrong theme.
+  (function () {
+    try {
+      var saved = localStorage.getItem('theme');
+      if (saved) document.documentElement.setAttribute('data-theme', saved);
+    } catch (e) {}
+  })();
+</script>
+  </head>
+ 
+  <body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="topbar">
+  <div class="topbar-inner">
+    <a class="brand" href="#top">Teng Xiao</a>
+    <nav class="topnav" aria-label="Sections">
+      <a href="#news">News</a>
+      <a href="#research">Research</a>
+      <a href="#service">Service</a>
+    </nav>
+    <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Toggle dark mode">
+      <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.6M12 18.9v2.6M2.5 12h2.6M18.9 12h2.6M5.2 5.2l1.9 1.9M16.9 16.9l1.9 1.9M18.8 5.2l-1.9 1.9M7.1 16.9l-1.9 1.9"/></svg>
+      <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.6A8.6 8.6 0 0 1 9.4 3.5a8.6 8.6 0 1 0 11.1 11.1z"/></svg>
+    </button>
+  </div>
+</header>
+
+<main id="main" class="wrap">
+
+  <section id="top" class="intro">
+    <!-- Drop your photo in as images/profile.jpg and it will be picked up automatically. -->
+    <img class="avatar" src="images/profile.jpg" onerror="this.onerror=null;this.src='images/profile.svg'" alt="Teng Xiao" width="150" height="150">
+    <div class="intro-body">
+      <h1>Teng Xiao</h1>
+      <p>
+        I work at the <a href="https://allenai.org/">Allen Institute for AI (AI2)</a> and the
+        <a href="https://www.washington.edu/">University of Washington</a> with
+        <a href="https://nasmith.github.io/">Prof. Noah A. Smith</a> and
+        <a href="https://homes.cs.washington.edu/~hannaneh/">Prof. Hanna Hajishirzi</a>.
+        I completed my PhD at <a href="https://www.psu.edu/">Pennsylvania State University</a>, advised by
+        <a href="https://faculty.ist.psu.edu/vhonavar/index.htm">Prof. Vasant Honavar</a>.
+      </p>
+      <p>
+        I am interested in machine learning and reinforcement learning. I am currently working on:
+        (i) Alignment and Reasoning for LLM; (ii) Long-horizon LLM Agent.
+        My work is regularly published at ICML, ICLR, and NeurIPS.
+      </p>
+      <ul class="links">
+        <li><a href="mailto:tengx@allenai.org">Email</a></li>
+        <li><a href="https://scholar.google.com/citations?user=ld3OKXwAAAAJ&amp;hl=en&amp;oi=ao">Scholar</a></li>
+        <li><a href="https://x.com/TengX6">Twitter</a></li>
+        <li><a href="https://github.com/tengxiao1">GitHub</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="news">
+    <h2>News</h2>
+    <!-- Newest first. Copy one <li> to add an entry; the date can be any short label. -->
+    <ul class="news">
+      <li><span class="news-date">2026</span><span class="news-text">Two new preprints on agent harnesses: <a href="https://arxiv.org/pdf/2607.12227">Rethinking the Evaluation of Harness Evolution for Agents</a> and <a href="https://arxiv.org/abs/2607.22688">Co-Harness</a>.</span></li>
+      <li><span class="news-date">2026</span><span class="news-text"><a href="https://arxiv.org/abs/2510.22926">Can Simple Denoising Improve Uniform State Diffusion Models?</a> accepted at <strong>ICML 2026</strong>.</span></li>
+      <li><span class="news-date">2026</span><span class="news-text"><a href="https://arxiv.org/abs/2603.11327">Meta-Reinforcement Learning with Self-Reflection for Agentic Search</a> accepted at <strong>COLM 2026</strong>.</span></li>
+      <li><span class="news-date">2026</span><span class="news-text"><a href="https://arxiv.org/abs/2606.23321">Tmax: A Simple Recipe for Terminal Agents</a> is out.</span></li>
+      <li><span class="news-date">2025</span><span class="news-text"><a href="https://arxiv.org/abs/2512.13961">Olmo 3</a> is out. I am a <strong>core contributor</strong> on RL post-training.</span></li>
+      <li><span class="news-date">2025</span><span class="news-text"><strong>Honorable Mention in AI Dissertations</strong> at the Annual Penn State AI Awards &mdash; one of three recipients across the university.</span></li>
+      <li><span class="news-date">2025</span><span class="news-text"><a href="https://github.com/tengxiao1/SimPER">SimPER</a> is used by the <strong>EXAONE</strong> series models from LG AI Research.</span></li>
+      <li><span class="news-date">2025</span><span class="news-text">Joined the <strong>Allen Institute for AI</strong> as a researcher.</span></li>
+      <li><span class="news-date">2025</span><span class="news-text">Defended my PhD at Penn State.</span></li>
+      <li><span class="news-date">2025</span><span class="news-text"><a href="https://openreview.net/forum?id=xyfb9HHvMe">DSPO</a> selected as an <strong>Oral</strong> at ICLR 2025 (top 1.8%).</span></li>
+      <li><span class="news-date">2025</span><span class="news-text">Serving as <strong>Area Chair</strong> for NeurIPS and ACL.</span></li>
+      <li><span class="news-date">2022</span><span class="news-text"><a href="https://arxiv.org/abs/2206.03601">Decoupled Self-supervised Learning for Graphs</a> selected as a <strong>Spotlight</strong> at NeurIPS 2022 (top 5%).</span></li>
+    </ul>
+  </section>
+
+  <section id="research">
+    <h2>Selected Research</h2>
+    <p class="section-note">
+      A selection organised by theme; the full list is on
+      <a href="https://scholar.google.com/citations?user=ld3OKXwAAAAJ&amp;hl=en&amp;oi=ao">Google Scholar</a>.
+      <span class="star">*</span> equal contribution, <span class="star">&dagger;</span> advising role.
+    </p>
+
+    <div class="topic">
+      <div class="topic-head">
+        <span class="topic-num">01</span>
+        <h3 class="topic-title">Self-Evolution for LLMs</h3>
+      </div>
+      <ol class="pubs">
+
+        <li class="pub">
+          <span class="pub-year">2026</span>
+          <div class="pub-body">
+            <a class="pub-title" href="https://arxiv.org/pdf/2607.12227">Rethinking the Evaluation of Harness Evolution for Agents</a>
+            <p class="authors">Yike Wang<span class="star">*</span>, Huaisheng Zhu<span class="star">*</span>, Zhengyu Hu, Yige Yuan, Zhengyu Chen, Shakti Senthil, Hannaneh Hajishirzi, Yulia Tsvetkov, Pradeep Dasigi, <span class="me">Teng Xiao</span><span class="star">*</span></p>
+            <p class="meta">
+              <span class="venue venue-preprint">Preprint</span>
+              <a href="https://arxiv.org/pdf/2607.12227">Paper</a>
+              <a href="https://yikee.github.io/harnessevolution/">Blog</a>
+              <a href="https://github.com/rethinking-harness-evolution">Code</a>
+            </p>
+          </div>
+        </li>
+
+        <li class="pub">
+          <span class="pub-year">2026</span>
+          <div class="pub-body">
+            <a class="pub-title" href="https://arxiv.org/abs/2607.22688">Co-Harness: Co-Evolving Harnesses and Model Weights for LLM Agents</a>
+            <p class="authors">Zhengyu Chen<span class="star">*</span>, <span class="me">Teng Xiao</span><span class="star">*</span>, Huaisheng Zhu, Yige Yuan, Luan Zhang, Jingang Wang</p>
+            <p class="meta">
+              <span class="venue venue-preprint">Preprint</span>
+              <a href="https://arxiv.org/abs/2607.22688">Paper</a>
+            </p>
+          </div>
+        </li>
+
+        <li class="pub">
+          <span class="pub-year">2026</span>
+          <div class="pub-body">
+            <a class="pub-title" href="https://arxiv.org/abs/2603.11327">Meta-Reinforcement Learning with Self-Reflection for Agentic Search</a>
+            <p class="authors"><span class="me">Teng Xiao</span>, Yige Yuan<span class="star">*</span>, Hamish Ivison, Huaisheng Zhu, Faeze Brahman, Nathan Lambert, Pradeep Dasigi, Noah A. Smith, Hannaneh Hajishirzi</p>
+            <p class="meta">
+              <span class="venue venue-colm">COLM</span>
+              <a href="https://arxiv.org/abs/2603.11327">Paper</a>
+              <a href="https://github.com/tengxiao1/MR-Search">Code</a>
+            </p>
+          </div>
+        </li>
+
+      </ol>
+    </div>
+
+    <div class="topic">
+      <div class="topic-head">
+        <span class="topic-num">02</span>
+        <h3 class="topic-title">Reinforcement Learning for LLMs</h3>
+      </div>
+      <ol class="pubs">
+
+        <li class="pub">
+          <span class="pub-year">2026</span>
+          <div class="pub-body">
+            <a class="pub-title" href="https://arxiv.org/abs/2606.23321">Tmax: A Simple Recipe for Terminal Agents</a>
+            <p class="authors">Hamish Ivison<span class="star">*</span>, Junjie Oscar Yin<span class="star">*</span>, Rulin Shao, <span class="me">Teng Xiao</span>, Nathan Lambert, Hannaneh Hajishirzi</p>
+            <p class="meta">
+              <span class="venue venue-preprint">Preprint</span>
+              <a href="https://arxiv.org/abs/2606.23321">Paper</a>
+              <a href="https://github.com/hamishivi/tmax">Code</a>
+            </p>
+          </div>
+        </li>
+
+        <li class="pub">
+          <span class="pub-year">2025</span>
+          <div class="pub-body">
+            <a class="pub-title" href="https://arxiv.org/abs/2512.13961">Olmo 3</a>
+            <p class="authors">OLMo Team, including <span class="me">Teng Xiao</span><span class="star">*</span></p>
+            <p class="pub-note">Core contributor, RL post-training.</p>
+            <p class="meta">
+              <span class="venue venue-report">Tech Report</span>
+              <a href="https://arxiv.org/abs/2512.13961">Paper</a>
+              <a href="https://huggingface.co/collections/allenai/olmo-3">Models</a>
+            </p>
+          </div>
+        </li>
+
+        <li class="pub">
+          <span class="pub-year">2025</span>
+          <div class="pub-body">
+            <a class="pub-title" href="https://arxiv.org/pdf/2510.15047">Internalizing World Models via Self-Play Finetuning for Agentic RL</a>
+            <p class="authors">Shiqi Chen<span class="star">*</span>, Tongyao Zhu<span class="star">*</span>, Zian Wang<span class="star">*</span>, Jinghan Zhang<span class="star">*</span>, Kangrui Wang, Siyang Gao, <span class="me">Teng Xiao</span><span class="star">*</span>, Yee Whye Teh, Junxian He, Manling Li</p>
+            <p class="meta">
+              <span class="venue venue-preprint">Preprint</span>
+              <a href="https://arxiv.org/pdf/2510.15047">Paper</a>
+              <a href="https://github.com/shiqichen17/SPA">Code</a>
+            </p>
+          </div>
+        </li>
+
+        <li class="pub">
+          <span class="pub-year">2025</span>
+          <div class="pub-body">
+            <a class="pub-title" href="https://openreview.net/forum?id=2QdsjiNXgj">Inference-time Alignment in Continuous Space</a>
+            <p class="authors">Yige Yuan, <span class="me">Teng Xiao</span><span class="star">*</span>, Yunfan Li, Bingbing Xu, Shuchang Tao, Yunqi Qiu, Huawei Shen, Xueqi Cheng</p>
+            <p class="meta">
+              <span class="venue venue-neurips">NeurIPS</span>
+              <a href="https://openreview.net/forum?id=2QdsjiNXgj">Paper</a>
+            </p>
+          </div>
+        </li>
+
+        <li class="pub">
+          <span class="pub-year">2025</span>
+          <div class="pub-body">
+            <a class="pub-title" href="https://openreview.net/forum?id=jfwe9qNqRi">SimPER: A Minimalist Approach to Preference Alignment without Hyperparameters</a>
+            <p class="authors"><span class="me">Teng Xiao</span>, Yige Yuan<span class="star">*</span>, Zhengyu Chen, Mingxiao Li, Shangsong Liang, Zhaochun Ren, Vasant G. Honavar</p>
+            <p class="pub-note">Used by the EXAONE series models from LG AI Research.</p>
+            <p class="meta">
+              <span class="venue venue-iclr">ICLR</span>
+              <a href="https://openreview.net/forum?id=jfwe9qNqRi">Paper</a>
+              <a href="https://github.com/tengxiao1/SimPER">Code</a>
+            </p>
+          </div>
+        </li>
+
+        <li class="pub">
+          <span class="pub-year">2025</span>
+          <div class="pub-body">
+            <a class="pub-title" href="https://arxiv.org/abs/2503.05079">On a Connection Between Imitation Learning and RLHF</a>
+            <p class="authors"><span class="me">Teng Xiao</span>, Yige Yuan, Mingxiao Li, Zhengyu Chen, Vasant G. Honavar</p>
+            <p class="meta">
+              <span class="venue venue-iclr">ICLR</span>
+              <a href="https://arxiv.org/abs/2503.05079">Paper</a>
+              <a href="https://github.com/tengxiao1/DIL">Code</a>
+            </p>
+          </div>
+        </li>
+
+        <li class="pub">
+          <span class="pub-year">2024</span>
+          <div class="pub-body">
+            <a class="pub-title" href="https://openreview.net/forum?id=57OQXxbTbY">Cal-DPO: Calibrated Direct Preference Optimization for Language Model Alignment</a>
+            <p class="authors"><span class="me">Teng Xiao</span>, Yige Yuan, Huaisheng Zhu, Mingxiao Li, Vasant G. Honavar</p>
+            <p class="meta">
+              <span class="venue venue-neurips">NeurIPS</span>
+              <a href="https://openreview.net/forum?id=57OQXxbTbY">Paper</a>
+              <a href="https://github.com/tengxiao1/Cal-DPO">Code</a>
+            </p>
+          </div>
+        </li>
+
+      </ol>
+    </div>
+
+    <div class="topic">
+      <div class="topic-head">
+        <span class="topic-num">03</span>
+        <h3 class="topic-title">Structured Knowledge Representation Learning</h3>
+      </div>
+      <ol class="pubs">
+
+        <li class="pub">
+          <span class="pub-year">2024</span>
+          <div class="pub-body">
+            <a class="pub-title" href="https://openreview.net/forum?id=DomBynQsqt">3M-Diffusion: Latent Multi-Modal Diffusion for Text-Based Generation of Molecular Graphs</a>
+            <p class="authors">Huaisheng Zhu<span class="star">*</span>, <span class="me">Teng Xiao</span><span class="star">*</span>, Vasant G. Honavar</p>
+            <p class="meta">
+              <span class="venue venue-colm">COLM</span>
+              <a href="https://openreview.net/forum?id=DomBynQsqt">Paper</a>
+              <a href="https://github.com/huaishengzhu/3MDiffusion">Code</a>
+            </p>
+          </div>
+        </li>
+
+        <li class="pub">
+          <span class="pub-year">2024</span>
+          <div class="pub-body">
+            <a class="pub-title" href="https://openreview.net/attachment?id=vsy21Xodrt&amp;name=pdf">Efficient Contrastive Learning for Fast and Accurate Inference on Graphs</a>
+            <p class="authors"><span class="me">Teng Xiao</span>, Huaisheng Zhu, Zhiwei Zhang, Zhimeng Guo, Charu C. Aggarwal, Suhang Wang, Vasant G. Honavar</p>
+            <p class="meta">
+              <span class="venue venue-icml">ICML</span>
+              <a href="https://openreview.net/attachment?id=vsy21Xodrt&amp;name=pdf">Paper</a>
+              <a href="https://github.com/tengxiao1/GraphECL">Code</a>
+            </p>
+          </div>
+        </li>
+
+        <li class="pub">
+          <span class="pub-year">2023</span>
+          <div class="pub-body">
+            <a class="pub-title" href="https://arxiv.org/abs/2310.18884">Simple and Asymmetric Graph Contrastive Learning without Augmentations</a>
+            <p class="authors"><span class="me">Teng Xiao</span><span class="star">*</span>, Huaisheng Zhu<span class="star">*</span>, Zhengyu Chen, Suhang Wang</p>
+            <p class="meta">
+              <span class="venue venue-neurips">NeurIPS</span>
+              <a href="https://arxiv.org/abs/2310.18884">Paper</a>
+              <a href="https://github.com/tengxiao1/GraphACL">Code</a>
+            </p>
+          </div>
+        </li>
+
+        <li class="pub">
+          <span class="pub-year">2022</span>
+          <div class="pub-body">
+            <a class="pub-title" href="https://arxiv.org/abs/2206.03601">Decoupled Self-supervised Learning for Graphs</a>
+            <span class="award">Spotlight &middot; top 5%</span>
+            <p class="authors"><span class="me">Teng Xiao</span>, Zhengyu Chen, Zhimeng Guo, Zeyang Zhuang, Suhang Wang</p>
+            <p class="meta">
+              <span class="venue venue-neurips">NeurIPS</span>
+              <a href="https://arxiv.org/abs/2206.03601">Paper</a>
+              <a href="https://openreview.net/attachment?id=Bwh6XmDEDe&amp;name=supplementary_material">Code</a>
+            </p>
+          </div>
+        </li>
+
+      </ol>
+    </div>
+  </section>
+
+  <section id="service">
+    <h2>Academic Service</h2>
+    <dl class="service">
+      <dt>Area Chair</dt>
+      <dd>NeurIPS, ACL</dd>
+
+      <dt>Program Committee &amp; Reviewer</dt>
+      <dd>ICLR (2022&ndash;2026), NeurIPS (2022&ndash;2025), ICML (2023, 2024), WSDM (2023&ndash;2025), AAAI (2022, 2023), SIGIR (2021&ndash;2023), ACL ARR (2024), CIKM (2023), TheWebConf (2022, 2023), COLM (2024)</dd>
+
+      <dt>Journal Reviewer</dt>
+      <dd>ACM Transactions on Intelligent Systems and Technology, ACM Transactions on Information Systems</dd>
+    </dl>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <p>&copy; <span id="year">2026</span> Teng Xiao</p>
+  </div>
+</footer>
+
+<script>
+  (function () {
+    var root = document.documentElement;
+    var toggle = document.getElementById('theme-toggle');
+
+    toggle.addEventListener('click', function () {
+      var isDark = root.getAttribute('data-theme') === 'dark' ||
+        (!root.hasAttribute('data-theme') && window.matchMedia('(prefers-color-scheme: dark)').matches);
+      var next = isDark ? 'light' : 'dark';
+      root.setAttribute('data-theme', next);
+      try { localStorage.setItem('theme', next); } catch (e) {}
+    });
+
+    document.getElementById('year').textContent = new Date().getFullYear();
+  })();
+</script>
+  </body>
+</html>
