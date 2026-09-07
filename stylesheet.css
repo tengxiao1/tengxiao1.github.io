@@ -507,108 +507,115 @@ a.pub-title:hover {
   border-color: var(--accent);
 }
 
+/* A venue that sets --venue-fill becomes a solid badge; the ones that leave it
+   unset (Preprint, Tech Report) fall back to the quiet outline. */
 .venue {
   display: inline-block;
-  padding: 2px 9px;
-  border-radius: 3px;
-  font-size: 11px;
-  font-weight: 500;
-  letter-spacing: 0.04em;
+  padding: 3px 10px;
+  border-radius: 4px;
+  font-size: 11.5px;
+  font-weight: 700;
+  letter-spacing: 0.07em;
   text-transform: uppercase;
-  background: var(--card);
-  color: var(--muted);
-  border: 1px solid var(--rule);
+  background: var(--venue-fill, var(--card));
+  color: var(--venue-ink, var(--muted));
+  border: 1px solid var(--venue-fill, var(--rule));
+}
+
+.venue-neurips,
+.venue-icml,
+.venue-iclr,
+.venue-colm,
+.venue-emnlp,
+.venue-acl,
+.venue-aaai {
+  --venue-ink: #fffdf9;
 }
 
 .venue-neurips {
-  color: #6b4396;
-  border-color: rgba(107, 67, 150, 0.35);
-  background: rgba(107, 67, 150, 0.07);
+  --venue-fill: #6b4396;
 }
 
 .venue-icml {
-  color: #2a5f96;
-  border-color: rgba(42, 95, 150, 0.35);
-  background: rgba(42, 95, 150, 0.07);
+  --venue-fill: #2a5f96;
 }
 
 .venue-iclr {
-  color: #1f6f5f;
-  border-color: rgba(31, 111, 95, 0.35);
-  background: rgba(31, 111, 95, 0.07);
+  --venue-fill: #1f6f5f;
 }
 
 .venue-colm {
-  color: #9a4a1f;
-  border-color: rgba(154, 74, 31, 0.35);
-  background: rgba(154, 74, 31, 0.07);
+  --venue-fill: #9a4a1f;
 }
 
 .venue-emnlp {
-  color: #97304a;
-  border-color: rgba(151, 48, 74, 0.35);
-  background: rgba(151, 48, 74, 0.07);
+  --venue-fill: #97304a;
 }
 
 .venue-acl {
-  color: #a8451c;
-  border-color: rgba(168, 69, 28, 0.35);
-  background: rgba(168, 69, 28, 0.07);
+  --venue-fill: #a8451c;
 }
 
 .venue-aaai {
-  color: #55605c;
-  border-color: rgba(85, 96, 92, 0.35);
-  background: rgba(85, 96, 92, 0.07);
+  --venue-fill: #55605c;
 }
 
-[data-theme="dark"] .venue {
-  color: var(--muted);
-}
-
+/* Lifted a step on the dark paper so the fills keep their weight. */
 [data-theme="dark"] .venue-neurips {
-  color: #c0a2e8;
+  --venue-fill: #7f56b3;
 }
 
 [data-theme="dark"] .venue-icml {
-  color: #8ab6e6;
+  --venue-fill: #3a6fa6;
 }
 
 [data-theme="dark"] .venue-iclr {
-  color: #63c4ae;
+  --venue-fill: #23806c;
 }
 
 [data-theme="dark"] .venue-colm {
-  color: #e8a06a;
+  --venue-fill: #b05a28;
 }
 
 [data-theme="dark"] .venue-emnlp {
-  color: #ea8399;
+  --venue-fill: #ab3a55;
+}
+
+[data-theme="dark"] .venue-acl {
+  --venue-fill: #bd5322;
+}
+
+[data-theme="dark"] .venue-aaai {
+  --venue-fill: #626e69;
 }
 
 @media (prefers-color-scheme: dark) {
-  :root:not([data-theme="light"]) .venue {
-    color: var(--muted);
-  }
-
   :root:not([data-theme="light"]) .venue-neurips {
-    color: #c0a2e8;
+    --venue-fill: #7f56b3;
   }
 
   :root:not([data-theme="light"]) .venue-icml {
-    color: #8ab6e6;
+    --venue-fill: #3a6fa6;
   }
 
   :root:not([data-theme="light"]) .venue-iclr {
-    color: #63c4ae;
+    --venue-fill: #23806c;
   }
 
   :root:not([data-theme="light"]) .venue-colm {
-    color: #e8a06a;
+    --venue-fill: #b05a28;
   }
 
   :root:not([data-theme="light"]) .venue-emnlp {
-    color: #ea8399;
+    --venue-fill: #ab3a55;
+  }
+
+  :root:not([data-theme="light"]) .venue-acl {
+    --venue-fill: #bd5322;
+  }
+
+  :root:not([data-theme="light"]) .venue-aaai {
+    --venue-fill: #626e69;
   }
 }
 
