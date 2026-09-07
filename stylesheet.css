@@ -1,26 +1,26 @@
 :root {
-  --paper: #f7f5ef;
-  --dot: rgba(80, 66, 48, 0.13);
-  --pill: rgba(255, 253, 249, 0.86);
-  --card: #fffdf9;
-  --text: #241f1a;
-  --muted: #6a6055;
-  --faint: #948a7c;
-  --rule: #ded7c9;
+  --paper: #f5f4f2;
+  --dot: rgba(70, 68, 66, 0.11);
+  --pill: rgba(255, 255, 255, 0.86);
+  --card: #fcfcfb;
+  --text: #1e1d1c;
+  --muted: #5d5b58;
+  --faint: #8e8b87;
+  --rule: #e0dedb;
   --accent: #9a4a1f;
   --accent-soft: rgba(154, 74, 31, 0.09);
   color-scheme: light;
 }
 
 [data-theme="dark"] {
-  --paper: #17150f;
-  --dot: rgba(226, 210, 180, 0.09);
-  --pill: rgba(35, 31, 24, 0.86);
-  --card: #1e1b14;
-  --text: #ece4d6;
-  --muted: #a89d8c;
-  --faint: #7b7161;
-  --rule: #342f25;
+  --paper: #151413;
+  --dot: rgba(220, 216, 210, 0.08);
+  --pill: rgba(32, 31, 30, 0.86);
+  --card: #1c1b1a;
+  --text: #e8e6e2;
+  --muted: #a3a09b;
+  --faint: #74716c;
+  --rule: #302e2c;
   --accent: #d98a52;
   --accent-soft: rgba(217, 138, 82, 0.13);
   color-scheme: dark;
@@ -28,14 +28,14 @@
 
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
-    --paper: #17150f;
-    --dot: rgba(226, 210, 180, 0.09);
-    --pill: rgba(35, 31, 24, 0.86);
-    --card: #1e1b14;
-    --text: #ece4d6;
-    --muted: #a89d8c;
-    --faint: #7b7161;
-    --rule: #342f25;
+    --paper: #151413;
+    --dot: rgba(220, 216, 210, 0.08);
+    --pill: rgba(32, 31, 30, 0.86);
+    --card: #1c1b1a;
+    --text: #e8e6e2;
+    --muted: #a3a09b;
+    --faint: #74716c;
+    --rule: #302e2c;
     --accent: #d98a52;
     --accent-soft: rgba(217, 138, 82, 0.13);
     color-scheme: dark;
@@ -130,7 +130,7 @@ a:focus-visible {
   background: var(--pill);
   border: 1px solid var(--rule);
   border-radius: 999px;
-  box-shadow: 0 3px 14px rgba(60, 45, 25, 0.09);
+  box-shadow: 0 3px 14px rgba(50, 48, 45, 0.09);
   backdrop-filter: saturate(180%) blur(12px);
   -webkit-backdrop-filter: saturate(180%) blur(12px);
 }
@@ -284,7 +284,7 @@ h2::before {
   object-fit: cover;
   background: var(--card);
   border: 1px solid var(--rule);
-  box-shadow: 0 3px 14px rgba(60, 45, 25, 0.1);
+  box-shadow: 0 3px 14px rgba(50, 48, 45, 0.1);
 }
 
 /* Hang the portrait in the left margin so the bio starts on the same line as
@@ -529,7 +529,7 @@ a.pub-title:hover {
 .venue-emnlp,
 .venue-acl,
 .venue-aaai {
-  --venue-ink: #fffdf9;
+  --venue-ink: #fcfcfb;
 }
 
 .venue-neurips {
