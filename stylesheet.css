@@ -221,6 +221,14 @@ h3 {
   color: var(--ink);
 }
 
+/* Paper-specific note on author order or contribution marks. */
+.author-note {
+  margin-top: 1px;
+  font-size: 13px;
+  font-style: italic;
+  color: var(--faint);
+}
+
 .meta {
   display: flex;
   flex-wrap: wrap;
